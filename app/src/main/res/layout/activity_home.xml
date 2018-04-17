@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mirsfang.daodian.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/home_bottom_tab"
+        ></FrameLayout>
+
+
+    <com.yinglan.alphatabs.AlphaTabsIndicator
+        android:id="@+id/home_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <!--            app:tabIconNormal=""
+            app:tabIconSelected=""-->
+        <com.yinglan.alphatabs.AlphaTabView
+            style="@style/home_bottom_tab_base_style"
+
+            app:tabText="进店"
+            app:tabTextSize="9sp"
+            app:textColorNormal="@color/home_bottom_tab_normal"
+            app:textColorSelected="@color/home_bottom_tab_selected"
+            app:paddingTexwithIcon="5dp"/>
+
+        <com.yinglan.alphatabs.AlphaTabView
+            style="@style/home_bottom_tab_base_style"
+
+            app:tabText="客户"
+            app:tabTextSize="9sp"
+            app:textColorNormal="@color/home_bottom_tab_normal"
+            app:textColorSelected="@color/home_bottom_tab_selected"
+            app:paddingTexwithIcon="5dp"
+            />
+
+        <com.yinglan.alphatabs.AlphaTabView
+            style="@style/home_bottom_tab_base_style"
+
+            app:tabText="应用"
+            app:tabTextSize="9sp"
+            app:textColorNormal="@color/home_bottom_tab_normal"
+            app:textColorSelected="@color/home_bottom_tab_selected"
+            app:paddingTexwithIcon="5dp"
+            />
+
+        <com.yinglan.alphatabs.AlphaTabView
+            style="@style/home_bottom_tab_base_style"
+
+            app:tabText="我的"
+            app:tabTextSize="9sp"
+            app:textColorNormal="@color/home_bottom_tab_normal"
+            app:textColorSelected="@color/home_bottom_tab_selected"
+            app:paddingTexwithIcon="5dp"
+            />
+
+
+
+    </com.yinglan.alphatabs.AlphaTabsIndicator>
+
+</RelativeLayout>
