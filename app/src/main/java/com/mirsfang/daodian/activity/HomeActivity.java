@@ -1,12 +1,11 @@
-package com.mirsfang.daodian;
+package com.mirsfang.daodian.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
 import android.widget.FrameLayout;
-import android.widget.ImageButton;
 
+import com.mirsfang.daodian.R;
 import com.mirsfang.daodian.base.BaseActivity;
 import com.mirsfang.daodian.fragment.JinDianFragment;
 import com.mirsfang.daodian.fragment.KeHuFragment;
@@ -14,9 +13,6 @@ import com.mirsfang.daodian.fragment.WoDeFragment;
 import com.mirsfang.daodian.fragment.YingYongFragment;
 import com.yinglan.alphatabs.AlphaTabsIndicator;
 import com.yinglan.alphatabs.OnTabChangedListner;
-
-import java.util.logging.Logger;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 

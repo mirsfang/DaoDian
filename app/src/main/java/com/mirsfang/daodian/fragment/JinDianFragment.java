@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mirsfang.daodian.R;
+import com.mirsfang.daodian.activity.LoginActivity;
 import com.mirsfang.daodian.base.BaseFramgent;
 
 /**
@@ -24,8 +25,31 @@ public class JinDianFragment extends BaseFramgent {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_jin_dian, container, false);
 
-        return inflater.inflate(R.layout.fragment_jin_dian, container, false);
+
+        initUI(view);
+        initData();
+
+        return view;
     }
 
+
+    @Override
+    protected void initUI(View view) {
+        super.initUI(view);
+
+        view.findViewById(R.id.textBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RedorectActivity(LoginActivity.class);
+            }
+        });
+
+    }
+
+    @Override
+    protected void initData() {
+        super.initData();
+    }
 }
