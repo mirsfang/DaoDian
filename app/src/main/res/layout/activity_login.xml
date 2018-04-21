@@ -29,6 +29,7 @@
             android:layout_marginLeft="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="phone"
             android:hint="请填写账号"
             />
 
@@ -62,7 +63,7 @@
             android:layout_marginLeft="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textVisiblePassword"
+            android:inputType="textPassword"
             android:layout_toRightOf="@+id/tvPassWord"
             android:hint="请填写密码"
             />
@@ -79,6 +80,15 @@
 
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/tvForgetPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码?"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/llPassWord"
+        />
+
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
@@ -86,9 +96,21 @@
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:layout_below="@+id/llPassWord"
+        android:background="@drawable/loging_btn_select"
         android:layout_marginTop="95dp"
         android:text="登录"
         android:textColor="#ffffff"
+        />
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码错误"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/btnLogin"
+        android:textColor="@color/red"
+        android:visibility="gone"
         />
 
 </RelativeLayout>

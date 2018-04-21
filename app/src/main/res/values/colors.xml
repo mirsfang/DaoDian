@@ -7,4 +7,6 @@
 
     <color name="home_bottom_tab_normal">#C9C8C9</color>
     <color name="home_bottom_tab_selected">#2A9CF1</color>
+
+    <color name="red">#E74C55</color>
 </resources>
