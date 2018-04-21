@@ -34,4 +34,13 @@ public class MainActivity extends BaseActivity {
     }
 
 
+    @Override
+    protected void initUI() {
+
+    }
+
+    @Override
+    protected void initData() {
+
+    }
 }

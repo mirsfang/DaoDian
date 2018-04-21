@@ -10,8 +10,13 @@ import android.support.v7.app.AppCompatActivity;
  * Created by Administrator on 2018/4/17.
  */
 
-public class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity {
 
+
+
+    protected abstract void initUI();
+
+    protected abstract void initData();
 
     /**
      * 跳转
